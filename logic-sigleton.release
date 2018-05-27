@@ -1,0 +1,11 @@
+# 请参考 https://help.aliyun.com/document_detail/59293.html 了解更多关于release文件的编写方式
+# 使用“git pull”的方式更新应用。参考https://help.aliyun.com/document_detail/60046.html
+
+# 构建源码语言类型
+code.language=scripts
+
+# 将当前的git版本号写入元信息文件
+build.command=git rev-parse HEAD > rdc_build_meta
+
+# 告诉RDC把元信息文件打包成package.tgz
+build.output=rdc_build_meta
